@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>CSS Project</title>
+</head>
+<body>
+  <div class="columns3">
+  <!---Navigation menu for the email -->
+    <div class="navigation">
+      <img src="assets/profile pic for css project.jpg" alt="profile picture of user">
+      <p>Welcome, <a class="username">Laura!</a></p>
+      <button>Compose</button>
+      <ul>
+        <li href="" class="navi">Inbox</li>
+        <li href="" class="navi">Tagged</li>
+        <li href="" class="navi">Important</li>
+        <li href="" class="navi">Sent Mail</li>
+        <li href="" class="navi">Drafts</li>
+        <li href="" class="navi">Trash</li>
+      </ul>
+    </div>
+ 
+  <!---Grey section for selecting email to read-->
+    <div class="search">
+      <div>
+        <form>
+        <textarea placeholder="Search for Emails" class="searchemails"></textarea>
+        </form>
+      </div>
+      <div class="openemail 1">
+         <a class="emailtitle">LinkedIn</a>
+         <a class="emaildate">02:45PM</a>
+         <br>
+          <p class="emailbody">You have a new connection Request</p>
+      </div>
+      <div class="openemail 2">
+         <a class="emailtitle">Michael Scott Daily Quotes</a>
+         <a class="emaildate">Jul 3, 2020</a>
+         <br>
+         <p class="emailbody">I'm optimistic because everyday I get a...</p>
+      </div>
+      <div class="openemail 3">
+        <a class="emailtitle">Lemar Software</a>
+        <a class="emaildate">Feb 9, 2020</a>
+        <br>
+        <p class="emailbody">Learn how you can give us money by...</p>
+      </div>
+    </div>
+
+  <!--Opened email with white background-->
+    <div class="reading">
+      <h4>To: taylor@lamarsoftware.org</h4>
+      <h4>From: re-reply@theofficenbc.com</h4>
+      <h2>Michael Scott Daily Quotes</h2>
+      <p>"Stay afraid, but do it anyway. What's important is the action. You don't have to wait to be confident. Just do it and eventually the confidence will follow" — Carrie Fisher. 
+        <br>
+      "One can choose to go back toward safety or forward toward growth. Growth must be chosen again and again; fear must be overcome again and again" — Abraham Maslow. 
+      <br>
+    "Success is not final; failure is not fatal: It is the courage to continue that counts" — Winston Churchill.
+      <br>
+    "You are never too old to set another goal or to dream a new dream" — C.S. Lewis. </p>
+    
+    <!--add "Enter Message" to reply back to email-->
+    <div>
+      <form>
+        <textarea placeholder="Enter Message" class="replymessage"></textarea>
+      </form>
+    </div>
+      <br>
+      <button>Send Email</button>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,140 @@
+
+/* Beginning of CSS style Sheet */
+body {
+
+}
+
+img {
+    height: 50px;
+    width: 40px;
+}
+
+ul li {
+    text-decoration: known;
+    list-style-type: none;
+    margin: 6px;
+}
+/* .selection {
+    /* display: flexbox; 
+    margin: auto;
+    position: absolute;
+} */ 
+
+.username {
+    text-transform: uppercase;
+    color: white;
+}
+
+.columns3 {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 25% 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+     "navigation search reading";
+  }
+
+/* Menu for email */
+ .navigation {
+    background-color: black;
+    color: white;
+    padding: 30px;
+    grid-area: navigation;
+    position: block;
+    left: 0;
+    height: 100%;
+    width: 90%;
+} 
+
+.navi:hover {
+    background-color: pink;
+}
+
+/* The Email Selection and search */
+.searchemails {
+    width: 90%;
+    box-sizing: border-box;
+    padding: 1px;
+    /*margin: 10px;*/
+    border-radius: 5px;
+    resize: none;
+}
+.search {
+    background-color: grey;
+    color: black;
+    padding: 30px;
+    grid-area: search;
+    left: 200px;
+    height: 100%;
+    width: 90%;
+    
+}
+
+.openemail {
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.openemail:hover {
+    background-color: pink;
+}
+
+.emailtitle {
+    float: left;
+}
+
+.emaildate {
+    float: right;
+}
+
+.emailbody {
+    flex-direction: flex-start;
+}
+
+/* Opened Email with response box */
+.reading {
+    background-color: white;
+    color: black;
+    padding: 50px;
+    grid-area: reading;
+    right: 0;
+    height: 100%;
+    width: 90%;
+}
+
+.replymessage {
+    width: 90%;
+    box-sizing: border-box;
+    padding: 5px;
+    margin: 1px;
+    border-radius: 10px; 
+    resize: none;
+    height: 100px;
+}
+
+button {
+    background-color: orange;
+    color: white;
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: pink;
+}
+
+ @media (max-width: 768px) {
+    .columns3 {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-row: auto;
+        grid-template-areas: 
+            "navigation" 
+            "search"
+            "reading";
+            gap: 5px; 
+    }
+}
