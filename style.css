@@ -1,7 +1,11 @@
 
 /* Beginning of CSS style Sheet */
 body {
-
+    overflow-x: hidden;
+    width: 90vw;
+    height: 100vh;
+    padding: 0; 
+    margin: 0;
 }
 
 img {
@@ -29,7 +33,7 @@ ul li {
     display: grid;
     gap: 10px;
     grid-template-columns: 25% 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
     grid-template-areas:
      "navigation search reading";
   }
@@ -41,9 +45,8 @@ ul li {
     padding: 30px;
     grid-area: navigation;
     position: block;
-    left: 0;
     height: 100%;
-    width: 90%;
+    width: 100%;
 } 
 
 .navi:hover {
@@ -64,17 +67,17 @@ ul li {
     color: black;
     padding: 30px;
     grid-area: search;
-    left: 200px;
     height: 100%;
-    width: 90%;
+    width: 100%;
     
 }
 
 .openemail {
     background-color: white;
     padding: 10px;
-    margin: 10px;
+    margin: 10px 0;
     border-radius: 5px;
+    width: 85%;
 }
 
 .openemail:hover {
@@ -99,9 +102,8 @@ ul li {
     color: black;
     padding: 50px;
     grid-area: reading;
-    right: 0;
     height: 100%;
-    width: 90%;
+    width: 100%; 
 }
 
 .replymessage {
@@ -130,11 +132,14 @@ button:hover {
     .columns3 {
         display: grid;
         grid-template-columns: 100%;
-        grid-row: auto;
+        grid-template-rows: auto auto auto;
         grid-template-areas: 
             "navigation" 
             "search"
             "reading";
-            gap: 5px; 
+            gap: 0; 
+    }
+    .reading {
+        padding: 30px;
     }
 }
